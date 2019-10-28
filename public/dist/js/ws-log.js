@@ -7,7 +7,7 @@ ws.onmessage = function (msg) {
 
 var wsConnectSetIntervalId = setInterval(() => {
     if (_isWSOpenAndReady()) {
-        ws.send('flashscreen')
+        ws.send('default')
         clearInterval(wsConnectSetIntervalId);
         console.log('+')
     }
